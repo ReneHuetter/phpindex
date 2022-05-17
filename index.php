@@ -63,7 +63,7 @@ echo '<br>';
  */
 if (isset($_POST['schicken'])) {
     echo 'Guten Tag, ' . $_POST['vor'] . ' ' . $_POST['nach'] . '<br>';
-    if($_POST['pw'] == 'bingo') {
+    if($_POST['bname'] == 'test' && $_POST['pw'] == 'test' || $_POST['pw'] == 'password') {
         echo 'Zugang gestattet' . '<br>';
     }
     else
@@ -82,11 +82,12 @@ echo 'Zweiter Wert: ' . (5 <=> 12) . '<br>';
 echo 'Werte sind  gleich: ' . (5 <=> 5) . '<br>';
 
 echo '<br>';
-
-for ($i = 1; $i <= 10; $i++) {
-    echo 'Zeile: ' . $i .'<br>';
+function schleife(){ 
+    for ($i = 1; $i <= 10; $i++) {
+        echo 'Zeile: ' . $i .'<br>';
+    }
 }
-
+schleife();
 echo '<br>';
 
 function table_test(){ 
@@ -205,4 +206,41 @@ function rtauschen(&$a, &$b) {
     $b = $temp;
 }
 
+function preisvergleich() {
+    $preis = 42;
+    echo($preis < 1? 'Das ist billig' : 'Langsam wird es teuer') . '<br>';
+}
+
+echo '<br>'; 
+preisvergleich();
+echo '<br>';
+prüfen();
+
+function prüfen() {
+    echo ($preis ?? 'Nicht vorhanden') . '<br>';
+    $preis = 1.26;
+    echo ($preis ?? 'Nicht vorhanden') . '<br>';
+}
+
+function trennstrich($anzahl) {
+    echo '<br>';
+    for ($i = 1; $i <= $anzahl; $i++){
+        echo '-';
+    }
+}
+
+trennstrich(4 ** 2);
+trennstrich(add($zahl, 3) ** 2);
+$tauschwert_1 = 15;
+$tauschwert_2 = 12;
+echo '<p>Per Kopie, vorher: ' . $tauschwert_1 . ' ' . $tauschwert_2 . '<br>';
+vtauschen($tauschwert_1, $tauschwert_2);
+echo 'Per kopie, nachher: ' . $tauschwert_1 . ' ' . $tauschwert_2 .'</p>';
+
+function summieren() {
+    echo 'Variable z: ' . $z . '<br>';
+    global $x;
+    $y = 35;
+    $z = 0;
+}
 ?>

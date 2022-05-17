@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Hütter</title>
+</head>
+<body>
+    <h1>ihre Wunsch Skoda</h1>
+    <form action="phpindex/ausgabe.php" method="post">
+        <input type="text" name="vname" placeholder="Vorname" required><br> 
+        <input type="text" name="nname" placeholder="Nachname" required><br> 
+        <input type="text" name="adresse" placeholder="Adresse" required>
+        <input type="text" name="str_nr" placeholder="Hausnummer" required>
+        <h3>Model wählen:</h3>
+        <label for="fabia">Fabia</label>
+        <input type="radio" id="fabia" name="model" value="Fabia"><br>
+        <label for="fabiaC">Fabia Combi</label>
+        <input type="radio" id="fabiaC" name="model" value="FabiaC"><br>
+        <label for="scala">Scala</label>
+        <input type="radio" id="scala" name="model" value="Scala"><br>
+        <label for="octavia">Octavia</label>
+        <input type="radio" id="octavia" name="model" value="Octavia"><br>
+        <label for="superb">Superb</label>
+        <input type="radio" id="superb" name="model" value="SuperB">
+        <h3>Motor wählen</h3>
+        <label for="Benzin">Benzin</label>
+        <input type="radio" id="Benzin" name="motor" value="Benzin"><br>
+        <label for="Diesel">Diesel</label>
+        <input type="radio" id="Diesel" name="motor" value="Diesel"><br>
+        <label for="Allrad">Allrad</label>
+        <input type="radio" id="Allrad" name="motor" value="Allrad"><br>
+        <h3>Ausstattung wählen</h3>
+        <label for="Ledscheinwerfer">Led-Scheinwerfer</label>
+        <input type="checkbox" id="Ledscheinwerfer" name="ledscheinwerfer" value="Ledscheinwerfer"><br>
+        <label for="Freisprechanlage">Freisprechanlage mit Bluetooth</label>
+        <input type="checkbox" id="Freisprechanlage" name="freisprechanlage" value="Freisprechanlage"><br>
+        <label for="Schaltknauf">Schaltknauf in Leder</label>
+        <input type="checkbox" id="Schaltknauf" name="schaltknauf" value="Schaltknauf"><br>
+        <label for="Airbags">Airbag (8 Stück)</label>
+        <input type="checkbox" id="Airbags" name="airbags" value="Airbags"><br>
+        <label for="Easystart">Easy-Start</label>
+        <input type="checkbox" id="Easystart" name="easystart" value="Easystart"><br>
+        <label for="Fernlichtassistent">Fernlicht-Assistent</label>
+        <input type="checkbox" id="Fernlichtassistent" name="fernlichtassistent" value="Fernlichtassistent"><br>
+        <label for="Parksensor">Parksensor</label>
+        <input type="checkbox" id="Parksensor" name="parksensor" value="Parksensor"><br>
+        <label for="Speedlimiter">Speedlimiter</label>
+        <input type="checkbox" id="Speedlimiter" name="speedlimiter" value="Speedlimiter"><br>
+        <label for="Virtualcockpit">Virtual Cockpit</label>
+        <input type="checkbox" id="Virtualcockpit" name="virtualcockpit" value="Virtualcockpit"><br>
+        <label for="Gepäckraumbeleuchtung">Gepäckraumbeleuchtung</label>
+        <input type="checkbox" id="Gepäck" name="bolognese" value="Bolognese"><br>
+        <label for="Pommes">Pommes</label>
+        <input type="checkbox" id="Pommes" name="pommes" value="Pommes"><br>
+        <label for="Kebapfleisch">Kebapfleisch</label>
+        <input type="checkbox" id="Kebapfleisch" name="Kebapfleisch" value="Kebapfleisch"><br>
+        <label for="Spinat">Spinat</label>
+        <input type="checkbox" id="Spinat" name="spinat" value="Spinat"><br>
+        <h3>Lieferzeit</h3>
+        <input type="time" name="lieferzeit" required>
+
+        <h3>Zahlungsart</h3>
+        <select name="zahlungsart">
+            <option value="bar" selected="selected">Barzahlung</option>
+            <option value="bankomat">Bankomatzahlung</option>
+            <option value="kreditkarte">Kreditkartenzahlung</option>
+            <option value="Paypal">Paypal</option>
+        </select><br><br>
+        <button type="submit" name="bestellbtn">Bestellen</button>
+    </form>
+</body>
+</html>
