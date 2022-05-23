@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>ihre Wunsch Skoda</h1>
-    <form action="phpindex/ausgabe.php" method="post">
+    <form action="phpindex/car_ausgabe.php" method="post">
         <input type="text" name="vname" placeholder="Vorname" required><br> 
         <input type="text" name="nname" placeholder="Nachname" required><br> 
         <input type="text" name="adresse" placeholder="Adresse" required>
@@ -51,13 +51,16 @@
         <label for="Virtualcockpit">Virtual Cockpit</label>
         <input type="checkbox" id="Virtualcockpit" name="virtualcockpit" value="Virtualcockpit"><br>
         <label for="Gepäckraumbeleuchtung">Gepäckraumbeleuchtung</label>
-        <input type="checkbox" id="Gepäck" name="bolognese" value="Bolognese"><br>
-        <label for="Pommes">Pommes</label>
-        <input type="checkbox" id="Pommes" name="pommes" value="Pommes"><br>
-        <label for="Kebapfleisch">Kebapfleisch</label>
-        <input type="checkbox" id="Kebapfleisch" name="Kebapfleisch" value="Kebapfleisch"><br>
-        <label for="Spinat">Spinat</label>
-        <input type="checkbox" id="Spinat" name="spinat" value="Spinat"><br>
+        <input type="checkbox" id="Gepäckraumbeleuchtung" name="gepäckraumbeleuchtung" value="Gepäckraumbeleuchtung"><br>
+        <label for="Frontscheibe">Frontscheibe beheizbar</label>
+        <input type="checkbox" id="Frontscheibe" name="frontscheibe" value="Frontscheibe"><br>
+        <label for="Raucher">Raucher-Paket</label>
+        <input type="checkbox" id="Raucher" name="raucher" value="Raucher"><br>
+        <label for="Sportfahrwerk">Sportfahrwerk</label>
+        <input type="checkbox" id="Sportfahrwerk" name="sportfahrwerk" value="Sportfahrwerk"><br>
+        <h3>Lackierung</h3>
+        <label for="Lackierung">Lackierung</label>
+        <input type="color" id="Lackierung" name="lackierung" value="Lackierung"><br>
         <h3>Lieferzeit</h3>
         <input type="time" name="lieferzeit" required>
 
