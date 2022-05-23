@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>ihre Wunsch Skoda</h1>
-    <form action="phpindex/carPhp/car_ausgabe.php" method="post">
+    <form action="car_ausgabe.php" method="post">
         <input type="text" name="vname" placeholder="Vorname" required><br> 
         <input type="text" name="nname" placeholder="Nachname" required><br> 
         <input type="text" name="adresse" placeholder="Adresse" required>
@@ -62,8 +62,7 @@
         <label for="Lackierung">Lackierung</label>
         <input type="color" id="Lackierung" name="lackierung" value="Lackierung"><br>
         <h3>Lieferzeit</h3>
-        <input type="time" name="lieferzeit" required>
-
+        <input type="datetime-local" name="lieferzeit" required>
         <h3>Zahlungsart</h3>
         <select name="zahlungsart">
             <option value="bar" selected="selected">Barzahlung</option>
